@@ -6,20 +6,16 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="../../styles.css">
     <script type="text/javascript" >
-      let i = document.getElementById("vertiba").value();
+      let i = document.getElementById("vertiba").value;
       
       function palielina() {
-        return document.getElementById("vertiba").value = i++;
+        return document.getElementById("vertiba").value ++;
       }
       function samazina(){
-        document.getElementById("vertiba").value = i--;
-      if(i < 0){
-        i = 0;
+      if(document.getElementById("vertiba").value > 0){
+        return document.getElementById("vertiba").value --;
       }
         //console.log('test');
-      }
-      function vertibaprint (i){
-        document.getElementById("vertiba").value = i;
       }
     </script>
   </head>
